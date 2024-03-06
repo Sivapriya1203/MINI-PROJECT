@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       #txt{
+        display: flex;
+            justify-content: center;
+            margin-top: 250px;
+        }
+        button{
+            font-size: 50PX;
+        margin-left: 600PX;
+        margin-top: 200PX;
+        }
+    </style> 
+</head>
+<body id="chng">
+    <button onclick="func()">CHANGE</button>
+    <h1 id="txt"></h1>
+ <script>
+    let index=0
+    let a=0
+    function func(){
+    let clr1=["All is well","MY LIFE MY RULES","DIAMOND CUTS DIAMOND","NO WAY TO OTHERS","FAILURE IS THE STEPPING STONE"]
+    let clr=["red","blue","yellow","green","violet"]
+    document.getElementById("txt").innerHTML=clr1[index++]
+    document.getElementById("chng").style.backgroundColor=clr[a++]
+    if((index>clr1.length-1 )&& (index>clr.length-1)){
+        index=0
+        a=0
+    }
+ }
+ </script>
+
+
+
+
+
+
+</body>
+</html>
