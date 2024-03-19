@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main{
+            display: flex;
+            justify-content: center;   
+        }
+        .container{
+            background-image:url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvOsjIt2mDWhENYs56QTbHhYSm0Q4ixcqTTKUM4rEBJg&s);
+            height: 500px;
+            width: 700px; 
+        }
+        button{
+            height: 50px;
+            width: 100px;
+            padding:10px;
+            margin-top: 1000px;
+        }
+        #btn1{
+            background-color: green;
+            margin: 30px;
+            color: white;
+        }
+        #btn2{
+            background-color: green;
+            margin: 30px;
+            color: white;
+        }
+        #btn3{
+            background-color:red;
+            margin: 30px;
+            color: white;
+        }
+        .btn{
+            display: flex;
+            justify-content: center;    
+        }
+        h1 {
+            text-align: center;
+            font-size: 50px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="main">
+    <div class="container">
+<h1 style="color: white;">Counter</h1>
+    <h1 id="count" style="color: white;">0</h1>
+<div class="btn">
+    <button onclick="func()" id="btn1">Increse</button>
+    <button onclick="func1()" id="btn2">Decrease</button>
+    <button onclick="func2()" id="btn3">Reset</button>
+    </div>
+</div>
+</div>   
+</body>
+<script>
+
+    let start=0
+    // counting the values is increase
+function func(){
+    document.getElementById("func")
+start+=1
+document.getElementById("count").innerHTML=start
+}
+// counting the value is decrease
+function func1(){
+    document.getElementById("func1")
+start-=1
+document.getElementById("count").innerHTML=start
+}
+// to reset the values
+function func2(){
+     document.getElementById("func2")
+start=0
+document.getElementById("count").innerHTML=start
+}
+</script>
+</html>
